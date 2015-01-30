@@ -1,4 +1,4 @@
-Jekyll input sources to statically generate about.project-octopus.org
+Jekyll input sources to statically generate about.project-octopus.org.
 
 License
 -------
