@@ -1,0 +1,9 @@
+title: Project Octopus
+markdown: kramdown
+github: http://github.com/project-octopus/about
+url: http://about.project-octopus.org
+permalink: /:year/:month/:day/:title/
+
+#gems:
+#  - jekyll-sitemap
+#  - jekyll-redirect-from

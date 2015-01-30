@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> 
+    {{page.title}} - {{site.title}}
+  </title>
+  <meta name="author" content="Project Octopus" />
+  <meta name="description" content="{{page.title}} - {{site.title}}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+  <link rel="icon" type="image/x-icon" href="http://project-octopus.org/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="http://project-octopus.org/assets/stylesheets/styles.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed/" />
+  <style>
+    html, body {
+      height: 100%;
+    }
+    .navbar .navbar-brand {
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .nav > li {
+      float: left;
+    }
+    .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -51px;
+    }
+    .footer, .push {
+      height: 51px;
+    }
+    .footer .navbar {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+    }
+    .error {
+      display: block;
+      color: #F8F8F8;
+      background-color: #AB4642;
+      padding: 1em;
+    }
+    .jumbotron {
+      text-align: center;
+    }
+    .home-input {
+      text-align: center
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://project-octopus.org/">
+      <img height="23px" alt="Octopus Project" src="http://project-octopus.org/assets/octopus_white_small.png"/>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">About</a></li>
+      <li><a href="/2015/01/30/hello-draft-background/">Read the Paper</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      {{content}}
+    </div>
+  </div>
+</div>
+<div class="push"></div>
+</div>
+<div class="footer">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="mailto:hello@project-octopus.org">hello@project-octopus.org</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="https://github.com/project-octopus/octopodes">Github</a></li>
+      <li><a href="https://twitter.com/helloocto">Twitter</a></li>
+      <li><a href="http://project-octopus.org/docs/api/index.html">API</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">License</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+</body>
+</html>
